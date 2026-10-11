@@ -5,7 +5,6 @@
 	<title>Sagar Hugar</title>
 	<meta name="description" content="Sagar Hugar is a product builder. His work spans agentic AI systems, voice agents, and conversation design, built by making decisions explicit.">
 	<meta name="viewport" content="width=device-width">
-	<!-- Layout and interaction adapted from Andrew Trousdale's portfolio (andrewtrousdale.com). Content: Sagar Hugar. -->
 	<link rel="icon" type="image/png" href="assets/img/favicon.png">
 	<link rel="stylesheet" href="assets/css/app.css">
 	<meta property="og:title" content="Sagar Hugar">
@@ -211,7 +210,7 @@
 
 <script src="assets/js/data.js"></script>
 <script>
-window.__KIRBY_QUERY = function(n){
+window.__SITE_QUERY = function(n){
   var m = /page\('(.*)'\)/.exec((n && n.query) || "");
   var uri = m ? m[1] : "error";
   var d = window.__SAGAR_PAGES[uri] || window.__SAGAR_PAGES["error"];
