@@ -1,0 +1,53 @@
+<svg viewBox="0 0 760 260" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">
+  <style>
+    .box { fill: #ffffff; stroke: #1a1815; stroke-width: 1.5; rx: 6; }
+    .gate { fill: #fff; stroke: #c2410c; stroke-width: 2; rx: 6; }
+    .label { fill: #1a1815; }
+    .muted { fill: #6b6660; font-size: 11px; }
+    .accent { fill: #c2410c; font-size: 11px; }
+    .arrow { stroke: #c2410c; stroke-width: 1.5; fill: none; marker-end: url(#a); }
+    .dead { stroke: #6b6660; stroke-width: 1.5; fill: none; stroke-dasharray: 4 3; marker-end: url(#d); }
+  </style>
+  <defs>
+    <marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#c2410c"/>
+    </marker>
+    <marker id="d" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#6b6660"/>
+    </marker>
+  </defs>
+
+  <rect x="20" y="40" width="120" height="54" class="box"/>
+  <text x="80" y="63" text-anchor="middle" class="label">job</text>
+  <text x="80" y="82" text-anchor="middle" class="label">description</text>
+
+  <rect x="200" y="40" width="130" height="54" class="gate"/>
+  <text x="265" y="63" text-anchor="middle" class="label">fit triage</text>
+  <text x="265" y="82" text-anchor="middle" class="accent">~30s · 0–100</text>
+
+  <rect x="390" y="40" width="130" height="54" class="box"/>
+  <text x="455" y="63" text-anchor="middle" class="label">tailoring</text>
+  <text x="455" y="82" text-anchor="middle" class="muted">skill engine</text>
+
+  <rect x="580" y="40" width="150" height="54" class="box"/>
+  <text x="655" y="63" text-anchor="middle" class="label">application kit</text>
+  <text x="655" y="82" text-anchor="middle" class="muted">resume · letters · prep</text>
+
+  <line x1="140" y1="67" x2="194" y2="67" class="arrow"/>
+  <line x1="330" y1="67" x2="384" y2="67" class="arrow"/>
+  <line x1="520" y1="67" x2="574" y2="67" class="arrow"/>
+
+  <line x1="265" y1="94" x2="265" y2="140" class="dead"/>
+  <text x="280" y="135" class="muted">most JDs die here — by design</text>
+
+  <rect x="390" y="170" width="150" height="54" class="box"/>
+  <text x="465" y="193" text-anchor="middle" class="label">chrome ext</text>
+  <text x="465" y="212" text-anchor="middle" class="muted">ATS autofill</text>
+
+  <rect x="580" y="170" width="150" height="54" class="box"/>
+  <text x="655" y="193" text-anchor="middle" class="label">funnel analytics</text>
+  <text x="655" y="212" text-anchor="middle" class="muted">revealed preference</text>
+
+  <line x1="655" y1="94" x2="465" y2="164" class="arrow"/>
+  <line x1="655" y1="94" x2="655" y2="164" class="arrow"/>
+</svg>

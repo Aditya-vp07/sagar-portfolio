@@ -1,0 +1,54 @@
+<svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">
+  <style>
+    .box { fill: #ffffff; stroke: #1a1815; stroke-width: 1.5; rx: 6; }
+    .soft { fill: #faf8f4; stroke: #6b6660; stroke-width: 1; stroke-dasharray: 4 3; rx: 6; }
+    .label { fill: #1a1815; }
+    .muted { fill: #6b6660; font-size: 11px; }
+    .arrow { stroke: #c2410c; stroke-width: 1.5; fill: none; marker-end: url(#a); }
+  </style>
+  <defs>
+    <marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#c2410c"/>
+    </marker>
+  </defs>
+
+  <text x="20" y="30" class="muted">THE PIPELINE</text>
+
+  <rect x="20" y="50" width="130" height="54" class="box"/>
+  <text x="85" y="73" text-anchor="middle" class="label">capture</text>
+  <text x="85" y="92" text-anchor="middle" class="muted">transcripts in</text>
+
+  <rect x="210" y="50" width="130" height="54" class="box"/>
+  <text x="275" y="73" text-anchor="middle" class="label">extract</text>
+  <text x="275" y="92" text-anchor="middle" class="muted">LLM → records</text>
+
+  <rect x="400" y="50" width="130" height="54" class="box"/>
+  <text x="465" y="73" text-anchor="middle" class="label">store</text>
+  <text x="465" y="92" text-anchor="middle" class="muted">graph compounds</text>
+
+  <rect x="590" y="50" width="140" height="54" class="box"/>
+  <text x="660" y="73" text-anchor="middle" class="label">triggers</text>
+  <text x="660" y="92" text-anchor="middle" class="muted">9 signal types</text>
+
+  <line x1="150" y1="77" x2="204" y2="77" class="arrow"/>
+  <line x1="340" y1="77" x2="394" y2="77" class="arrow"/>
+  <line x1="530" y1="77" x2="584" y2="77" class="arrow"/>
+
+  <text x="20" y="170" class="muted">THE SURFACES</text>
+
+  <rect x="20" y="190" width="210" height="64" class="soft"/>
+  <text x="125" y="215" text-anchor="middle" class="label">Decisions</text>
+  <text x="125" y="236" text-anchor="middle" class="muted">what we decided, and why</text>
+
+  <rect x="270" y="190" width="210" height="64" class="soft"/>
+  <text x="375" y="215" text-anchor="middle" class="label">Signals</text>
+  <text x="375" y="236" text-anchor="middle" class="muted">where reasoning is breaking</text>
+
+  <rect x="520" y="190" width="210" height="64" class="soft"/>
+  <text x="625" y="215" text-anchor="middle" class="label">Reasoning Graph</text>
+  <text x="625" y="236" text-anchor="middle" class="muted">how beliefs hold each other up</text>
+
+  <line x1="375" y1="110" x2="125" y2="184" class="arrow"/>
+  <line x1="375" y1="110" x2="375" y2="184" class="arrow"/>
+  <line x1="375" y1="110" x2="625" y2="184" class="arrow"/>
+</svg>

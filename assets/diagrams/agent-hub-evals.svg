@@ -1,0 +1,34 @@
+<svg viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">
+  <style>
+    .box { fill: #ffffff; stroke: #1a1815; stroke-width: 1.5; rx: 6; }
+    .gate { fill: #fff; stroke: #c2410c; stroke-width: 2; rx: 6; }
+    .label { fill: #1a1815; }
+    .muted { fill: #6b6660; font-size: 11px; }
+    .arrow { stroke: #c2410c; stroke-width: 1.5; fill: none; marker-end: url(#a); }
+  </style>
+  <defs>
+    <marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#c2410c"/>
+    </marker>
+  </defs>
+
+  <rect x="20" y="60" width="180" height="70" class="box"/>
+  <text x="110" y="88" text-anchor="middle" class="label">agent suite</text>
+  <text x="110" y="108" text-anchor="middle" class="muted">proposals · compliance</text>
+  <text x="110" y="122" text-anchor="middle" class="muted">tagging · research</text>
+
+  <rect x="290" y="60" width="180" height="70" class="gate"/>
+  <text x="380" y="88" text-anchor="middle" class="label">eval gate</text>
+  <text x="380" y="108" text-anchor="middle" class="muted">quality + accuracy checks</text>
+  <text x="380" y="122" text-anchor="middle" class="muted">every release · 2wk cadence</text>
+
+  <rect x="560" y="60" width="170" height="70" class="box"/>
+  <text x="645" y="88" text-anchor="middle" class="label">AEC clients</text>
+  <text x="645" y="108" text-anchor="middle" class="muted">GTM &amp; marketing teams</text>
+  <text x="645" y="122" text-anchor="middle" class="muted">go-live dates held</text>
+
+  <line x1="200" y1="95" x2="284" y2="95" class="arrow"/>
+  <line x1="470" y1="95" x2="554" y2="95" class="arrow"/>
+
+  <text x="380" y="165" text-anchor="middle" class="muted">nothing reaches a client without clearing the gate</text>
+</svg>
